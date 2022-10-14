@@ -7,7 +7,7 @@ for elem in n:
         if elem == nomer:
             b += elem
 if len(b) == 0:
-    print('Ошибка. Вы ввели букву')
+    print('Ошибка. Вы ввели не число')
     sp1 = []
 elif int(n) <= 0:
     print('Ошибка. Число элементов последовательности должно быть больше 0')
@@ -19,7 +19,7 @@ else:
     for i in range(n):
         sp1[i] = input()
         if sp1[i] == '':
-            sp1[i] = int(randint(1, 100))
+            sp1[i] = int(randint(-100, 100))
         else:
             sp1[i] = int(sp1[i])
     print('Элементы первой последовательности', sp1)
@@ -31,7 +31,7 @@ for elem in m:
         if elem == nomer:
             c += elem
 if len(c) == 0:
-    print('Ошибка. Вы ввели букву')
+    print('Ошибка. Вы ввели не число')
     sp2 = []
 elif int(m) <= 0:
     print('Ошибка. Число элементов последовательности должно быть больше 0')
@@ -43,7 +43,7 @@ else:
     for i in range(m):
         sp2[i] = input()
         if sp2[i] == '':
-            sp2[i] = int(randint(1, 100))
+            sp2[i] = int(randint(-100, 100))
         else:
             sp2[i] = int(sp2[i])
     print('Элементы второй последовательности', sp2)

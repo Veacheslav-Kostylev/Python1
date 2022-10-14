@@ -18,11 +18,11 @@ else:
     for i in range(n):
         sp[i] = input()
         if sp[i] == '':
-            sp[i] = float(randint(1, 100))
+            sp[i] = float(randint(-100, 100))
         else:
             sp[i] = float(sp[i])
     print(sp)
-    maxElem = 0
+    maxElem = 1 * 10 ** -10
     nommax = 0
     for i in range(n):
         if sp[i] > maxElem:
